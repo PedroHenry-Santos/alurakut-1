@@ -1,10 +1,11 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 
 import { Main } from '.';
+import { renderWithTheme } from '../../utils/tests/helpers';
 
 describe('<Main />', () => {
   it('should render the heading', () => {
-    render(<Main />);
+    renderWithTheme(<Main />);
 
     expect(
       screen.getByRole('heading', { name: /Boilerplate NextJS/i })
@@ -12,10 +13,10 @@ describe('<Main />', () => {
   });
 
   it('should render colors correctly', () => {
-    const { container } = render(<Main />);
+    const { container } = renderWithTheme(<Main />);
 
     expect(container.firstChild).toHaveStyle({
-      'background-color': '#5e60ce'
+      'background-color': '#308BC5'
     });
   });
 });

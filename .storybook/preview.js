@@ -1,13 +1,15 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 
-import GlobalStyles from '../src/assets/styles/global'
+import light from 'assets/styles/themes/light'
+import GlobalStyles from 'assets/styles/global'
 
 export const decorators = [
   (Story) => (
-    <>
+    <ThemeProvider theme={light}>
       <Story />
       <GlobalStyles />
-    </>
+    </ThemeProvider>
   ),
 ];
 

@@ -1,12 +1,12 @@
 import { Meta, Story } from '@storybook/react';
 
-import { Illustrate } from '.';
+import { Box } from '.';
 
 export default {
-  title: 'Illustrate',
-  component: Illustrate
+  title: 'Box',
+  component: Box
 } as Meta;
 
 export const Default: Story = args => {
-  return <Illustrate {...args} />;
+  return <Box {...args} />;
 };

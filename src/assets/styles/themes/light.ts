@@ -28,8 +28,9 @@ export default {
     large: '1.6rem'
   },
   padding: {
-    small: '0.8rem',
-    medium: '1,6rem ',
+    xsmall: '0.8rem',
+    small: '1.2rem',
+    medium: '1.6rem ',
     large: '2rem',
     xlarge: '2.4rem',
     xxlarge: '4.6rem'
@@ -42,10 +43,13 @@ export default {
     alwaysOnTop: 50
   },
   margin: {
-    small: '0.9rem',
-    medium: '1rem',
-    large: '1.2rem',
-    xlarge: '1.6rem'
+    xxsmall: '0.9rem',
+    xsmall: '1rem',
+    small: '1.2rem',
+    medium: '1.6rem',
+    large: '2rem',
+    xlarge: '2.4rem',
+    xxlarge: '3rem'
   },
   border: {
     radius: '0.8rem'

@@ -9,6 +9,6 @@ module.exports = withPWA({
   },
   reactStrictMode: true,
   images: {
-    domains: []
+    domains: ['github.com']
   }
 })
